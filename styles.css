@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.questionsWrapper{
+  max-width: 955px;
+  margin: auto;
+}
+
+body{
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.sasuke{
+  text-decoration-line: line-through;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.gif-embed{
+  z-index: -1;
+  width: 100vh;
+  height: auto;
+  background-repeat: repeat;
+}
