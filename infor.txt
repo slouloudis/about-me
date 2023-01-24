@@ -1,0 +1,20 @@
+"use strict";
+
+Stick this at the top. 
+
+education history
+job experience
+goals
+
+Write 5 questions
+- prompt user each time 
+- ensure they are answering y/n or yes/no
+- alert() the user that they answered right/wrong
+
+- while building, use console.log to test the code,then switch to alert()
+
+use easilyier
+
+
+let          question1 = confirm("Do you have a dog") 
+	console.log(question1)

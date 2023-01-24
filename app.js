@@ -1,12 +1,15 @@
 // all questions must take y/n or yes/no. Use .toUpperCase
 
+let userName = prompt("What is your name?")
+
 function question1() { 
 
   let q1 = confirm("Did I go to space? y/n");
 
   if (q1 == true) {
     console.log("Sick");
-    document.write("<p>I have not been to space!</p>")
+    console.log(userName)
+    document.write("<p>I have not been to space!" + userName + "</p>")
   } else{
     console.log("boo!");
   }
@@ -19,14 +22,15 @@ function question2() {
   switch (q2.toLowerCase()) {
     case "yes":
       console.log("Wow!")
-      document.write("<p>I am great at tekken!</p>")
+      document.write("<p>I am great at tekken!**</p>")
         break;
     case "y":
       console.log("Wow!!")
-      document.write("<p>I am great at tekken!</p>")
+      document.write("<p>I am great at tekken!**</p>")
         break;
-    case "3":
+    case "no":
       console.log("Wow!!!")
+      document.write("<p>You're kinda correct - I'm very good compared to people at my local</p>")
         break;
   }
 }
@@ -36,14 +40,19 @@ function question3() {
   let q3 = prompt("Did I complete my masters degree in quantum bio-engineering? y/n");
 
   switch (q3.toLowerCase()) {
-    case "1":
+    case "yes":
+    case "y":
       console.log("Super!")
+      document.write("<p>That sounds super made up! Maybe in another universe...</p>")
         break;
-    case "2":
+    case "no":
       console.log("Super!!")
+      document.write("<p>Correct! It was in art</p>")
         break;
-    case "3":
+    case "concept art":
+    case "concept art/design":
       console.log("Super!!!")
+      document.write("<p>It wasn't very effective!</p>")
         break;
   }
 }
@@ -54,8 +63,10 @@ function question4() {
 
   if (q4 == true) {
     console.log("Correct!")
+    document.write("<p>Something</p>")
   } else {
     console.log("No!")
+    document.write("<p>Something</p>")
   }
 }
 
@@ -63,16 +74,12 @@ function question5() {
 
   let q5 = prompt("One day, I'm gonna become Hokage. Do you belive it?");
   
-  switch (q5.toLowerCase()) {
-    case "1":
-      console.log("Q5 1")
-        break;
-    case "2":
-      console.log("Q5 2")
-        break;
-    case "3":
-      console.log("Q5 3")
-        break;
+  if (q5 == "y" || "yes") {
+    console.log("hmm")
+    document.write("They'll carve my face on a mountain!")
+  } else {
+    console.log("noo")
+    document.write("Have some faith!")
   }
 }
    
