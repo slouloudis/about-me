@@ -8,8 +8,8 @@ function question1() {
 
   if (q1 == true) {
     console.log("Sick");
-    console.log(userName)
-    document.getElementById('q1ID').innerHTML("<p>I have not been to space!" + userName + "</p>")
+    // console.log(userName)
+    document.getElementById('q1ID').innerHTML ="<p>I have not been to space, " + userName + "! </p>"
     // document.write("<p>I have not been to space!" + userName + "</p>")
   } else{
     console.log("boo!");
@@ -62,7 +62,8 @@ function question3() {
       console.log("Super!!!")
       document.write("<p>It wasn't very effective!</p>")
         break;
-    case  (q3==null?"":q3):
+    // case  (q3==null?"":q3):
+    case "":
       default:
         console.log("null")
         document.write("<p> Hey! You didn't input a value</p>")
