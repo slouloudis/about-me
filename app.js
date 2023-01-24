@@ -9,9 +9,11 @@ function question1() {
   if (q1 == true) {
     console.log("Sick");
     console.log(userName)
-    document.write("<p>I have not been to space!" + userName + "</p>")
+    document.getElementById('q1ID').innerHTML("<p>I have not been to space!" + userName + "</p>")
+    // document.write("<p>I have not been to space!" + userName + "</p>")
   } else{
     console.log("boo!");
+    document.write("<p>One day we'll go, " + userName + "</p>")
   }
 }
 
@@ -30,7 +32,12 @@ function question2() {
         break;
     case "no":
       console.log("Wow!!!")
-      document.write("<p>You're kinda correct - I'm very good compared to people at my local</p>")
+      document.write("<p>You're kinda correct - I'm not very good compared to people at my local</p>")
+        break;
+    case  (q2==null?"":q2):
+      default:
+        console.log("null")
+        document.write("<p> Hey! You didn't input a value</p>")
         break;
   }
 }
@@ -42,6 +49,7 @@ function question3() {
   switch (q3.toLowerCase()) {
     case "yes":
     case "y":
+    case null:
       console.log("Super!")
       document.write("<p>That sounds super made up! Maybe in another universe...</p>")
         break;
@@ -54,6 +62,11 @@ function question3() {
       console.log("Super!!!")
       document.write("<p>It wasn't very effective!</p>")
         break;
+    case  (q3==null?"":q3):
+      default:
+        console.log("null")
+        document.write("<p> Hey! You didn't input a value</p>")
+        break;
   }
 }
 
@@ -63,18 +76,17 @@ function question4() {
 
   if (q4 == true) {
     console.log("Correct!")
-    document.write("<p>Something</p>")
+    document.write("<p>Yes! We moved to mossel bay when I was around 3 or 4 though.</p>")
   } else {
     console.log("No!")
-    document.write("<p>Something</p>")
+    document.write("<p>Sadly, I wasn't born on Mars </p>")
   }
 }
 
 function question5() {
-
   let q5 = prompt("One day, I'm gonna become Hokage. Do you belive it?");
   
-  if (q5 == "y" || "yes") {
+  if (q5 === "y" || q5 === "yes") {
     console.log("hmm")
     document.write("They'll carve my face on a mountain!")
   } else {
