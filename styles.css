@@ -25,3 +25,7 @@ ul{
   height: auto;
   background-repeat: repeat;
 }
+
+li::marker{
+  text-align: center;
+}
