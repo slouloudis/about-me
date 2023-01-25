@@ -112,12 +112,15 @@ function question6() {
 
   if (numberGame < correctNumber) {
     alert("Too low!");
+    document.write("You guessed the number wrong!")
     return false;
   } else if (numberGame > correctNumber) {
     alert("Too high!");
+    document.write("You guessed the number wrong!")
     return false;
   } else if (isNaN(numberGame)) {
-    alert("That isn't a number!")  
+    alert("That isn't a number!")
+    document.write("You didn't input a number!")  
   } else {
     alert("That's correct!")
     document.write("You guessed my number right! ┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿")
@@ -158,24 +161,22 @@ function question7() {
 
   for (let i = 0; i < 6; i++) {
     userAnswer = prompt("Guess one of the colours I'm thinking of! You have " + attempts + " attempts ☜(⌒▽⌒)☞") 
-    for (let j = 0; j < answers.length; j++) {
-      if (userAnswer == answers[j]) {
-        console.log("true?!")
+    for (let j = 0; j < answers.length; j++) { //nested loop to check if the user input matches one of the answers
+      if (userAnswer.toLowerCase() == answers[j]) {
         correct = true
       }
     }
     if (correct == true) {
-      break;
+      break; //breaks out of the i for loop on 159 to go to line 178
     }
-    --attempts
+    --attempts //decrement attempts if they havn't gotten it correct. Line 170 then checks if it was your last guess
     if (attempts == 0) {
       alert("Sorry! That was your last guess. (╥﹏╥)")
       break;
     }
-    alert("Try again! You have " + attempts + " extra lives left")
+    alert("Try again! You have " + attempts + " extra lives left") //tells user how many attempts they have
     console.log(attempts)
   }
-  // give the user 6 attemps to get it correct. 
   
   if (correct == true) {
     alert("Yep! " + userAnswer + " was one of the colours I was thinking of. Don't you hate that we have to spell colour 'color' in css?!?");
