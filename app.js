@@ -128,29 +128,6 @@ function question6() {
   }
 }
 
-// function question7() {
-//     //Add a 7th question that has multiple possible correct answers that are stored in an array.
-//     // Give the user 6 attempts to guess the correct answer.
-//     answers = ["red", "blue", "green","yellow", "brown", "orange","purple","pink","magenta","skyblue"]
-//     attempts = 6
-//     for (let i = 0; i < 6; i++){
-//       userAnswer = prompt("Guess one of the colours I'm thinking of! You have 6 attempts ☜(⌒▽⌒)☞")
-//       console.log(i)
-//       if (userAnswer.toLowerCase() == answers[0] || userAnswer.toLowerCase() == answers[5] || userAnswer.toLowerCase() == answers[8]) { 
-//           alert("Yep! " + userAnswer + " was one of the colours I was thinking of. Don't you hate that we have to spell colour 'color' in css?!?");
-//           document.write("You guessed my colour right! ✌(-‿-)✌")
-//           return false;
-//       } else {
-//         --attempts
-//         alert("Try again! You have " + attempts + " attempts left")
-//         console.log("attempt i number" + attempts)
-//         if (attempts == 0){
-//           document.write("You ran out of attempts! Reload the page to try again. PS (One of the possible answers was 'red'!")
-//         }
-//       }
-//     }
-// }
-
 function question7() {
   // create array with multiple correct stored answers.
   let answers = ["red", "orange", "magenta"]

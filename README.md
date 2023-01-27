@@ -1,5 +1,12 @@
 # about-me
 
+## Lighthouse
+
+![lighthosue](lighthouse.jpg)
+
+
+---
+
 let correctAnswers = 0
 
 // make a function called makeQuiz(ID, questions.OBJ)
