@@ -1,10 +1,6 @@
 # about-me
 
-## Lighthouse
-
-![lighthosue](lighthouse.jpg)
-
-
+This is a new branch with some changes ahead of main! 
 ---
 
 let correctAnswers = 0
