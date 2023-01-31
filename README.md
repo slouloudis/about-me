@@ -1,6 +1,6 @@
 # about-me
 
-This is a new branch with some changes ahead of main! 
+This is a new branch with some changes ahead of main! I'm using this branch to refactor some things (҂◡_◡) ᕤ
 ---
 
 let correctAnswers = 0
